@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Slimfit - Pusat Celana Kekinian</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aliceblue;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 0px 0;
+            background-attachment: fixed;
+            border-radius: 8px;
+        }
+
+        .product-view {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .product-showcase {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .product-showcase img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .features-section {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-item {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .product-item h3,
+        .product-item p {
+            padding: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="grad">
+        <header>
+            <h1>D&D Slimfit</h1>
+            <p>The Best Seller Ever</p>
+        </header>
+        <section class="product-view">
+            <div class="product-showcase">
+                <div class="slider">
+                    <img src="img/1.jpg" alt="Product Image" class="slide" id="slide1">
+                    <img src="img/2.jpg" alt="Product Image" class="slide" id="slide1">
+                    <img src="img/3.jpg" alt="Product Image" class="slide" id="slide1">
+                    <img src="img/4.jpg" alt="Product Image" class="slide" id="slide1">
+                    <img src="img/5.jpg" alt="Product Image" class="slide" id="slide1">
+                    <img src="img/6.jpg" alt="Product Image" class="slide" id="slide1">
+                    <img src="img/7.jpg" alt="Product Image" class="slide" id="slide1">
+                    <img src="img/8.jpg" alt="Product Image" class="slide" id="slide1">
+                </div>
+                <div class="slider-controls">
+                    <button class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="product-description">
+                <h2>Tampil Makin Kece</h2>
+                <p>Celana panjang bahan wool slim fit ini merupakan produk terlaris yang cocok untuk kamu gunakan saat
+                    pergi ke kantor. Nyaman dan stylish!</p>
+                <a href="#produk" class="cta-button">Cek Produk</a>
+            </div>
+        </section>
+        <br>
+        <section class="product-view">
+            <div class="product-view-container">
+                <h2>Keunggulan Produk</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <img src="https://i.ibb.co/zGDJzS4/20231207-224311.jpg" alt="Feature Icon 1">
+                        <h3>Aman dipakai</h3>
+                        <p>Aman dipakai di segala acara formal maupun non formal</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="https://i.ibb.co/zGDJzS4/20231207-224311.jpg" alt="Feature Icon 2">
+                        <h3>Bahan Premium</h3>
+                        <p>Bahan yang digunakan yaitu bahan premium, sehingga celana tidak mudah kusut dan lecek</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="https://i.ibb.co/zGDJzS4/20231207-224311.jpg" alt="Feature Icon 3">
+                        <h3>Jahitan</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, tempore saepe iure eius
+                            doloribus voluptate impedit magni quos adipisci dolorum itaque labore totam illum veniam
+                            obcaecati eum error, dignissimos maiores!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br />
+        <section class="product-view" id="produk">
+            <div class="product-view-container">
+                <h2>Produk Kami</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <div class="image-gallery">
+                            <img src="img/1.jpg" alt="Product 1">
+                            <img src="img/3.jpg" alt="Product 1">
+                        </div>
+                        <h3>Celana Wool Reguler</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quibusdam alias rem esse ex
+                            modi voluptas iure voluptates reprehenderit? Placeat aspernatur alias id distinctio dolorum!
+                        </p>
+                        <a href="https://shopee.com/dndslimfit"><button class="checkout-button"><i
+                                    class="fa-brands fa-shopify"></i> Shopee</button></a>
+                        <a href="https://www.tiktok.com/@dndslimfit.official"><button class="checkout-button"><i
+                                    class="fa-brands fa-tiktok"></i> Tiktok</button></a>
+                        <a href="https://wa.me/62895385148880"><button class="checkout-button"><i
+                                    class="fa-brands fa-whatsapp"></i> Whatsapp</button></a>
+                    </div>
+                    <div class="product-item">
+                        <div class="image-gallery">
+                            <img src="img/5.jpg" alt="Product 2">
+                            <img src="img/6.jpg" alt="Product 2">
+                        </div>
+                        <h3>Celana Glowsy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quia cupiditate! Itaque
+                            distinctio natus tempora, accusamus veritatis reiciendis ex? Odit eaque expedita quae fugit
+                            perferendis.</p>
+                        <a href="https://shopee.com/dndslimfit"><button class="checkout-button"><i
+                                    class="fa-brands fa-shopify"></i> Shopee</button></a>
+                        <a href="https://www.tiktok.com/@dndslimfit.official"><button class="checkout-button"><i
+                                    class="fa-brands fa-tiktok"></i> Tiktok</button></a>
+                        <a href="https://wa.me/62895385148880"><button class="checkout-button"><i
+                                    class="fa-brands fa-whatsapp"></i> Whatsapp</button></a>
+                    </div>
+                    <div class="product-item">
+                        <div class="image-gallery">
+                            <img src="img/2.jpg" alt="Product 3">
+                            <img src="img/4.jpg" alt="Product 3">
+                        </div>
+                        <h3>Ankle Pants</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem esse, neque ab sint
+                            maiores dolorum enim! Vitae ad quam sunt molestiae expedita maxime omnis optio.</p>
+                        <a href="https://shopee.com/dndslimfit"><button class="checkout-button"><i
+                                    class="fa-brands fa-shopify"></i> Shopee</button></a>
+                        <a href="https://www.tiktok.com/@dndslimfit.official"><button class="checkout-button"><i
+                                    class="fa-brands fa-tiktok"></i> Tiktok</button></a>
+                        <a href="https://wa.me/62895385148880"><button class="checkout-button"><i
+                                    class="fa-brands fa-whatsapp"></i> Whatsapp</button></a>
+                    </div>
+                    <!-- Add more product items here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Add more sections like testimonials, pricing, FAQ, etc. here -->
+        <footer>
+            <p class="copyright">&copy; D&D Slimfit. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
